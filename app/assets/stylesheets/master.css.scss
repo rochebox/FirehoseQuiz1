@@ -1,2 +1,67 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Amatica+SC);
+@import url(https://fonts.googleapis.com/css?family=Fascinate);
+@import url(https://fonts.googleapis.com/css?family=Knewave);
+
+body {
+	background: url('/assets/polka.jpg');
+	text-align:center;
+}
+
+h1{
+	font-family: 'gooddogregular', sans-serif;
+	font-size: 130px;
+	color: #6600cc;
+	text-shadow: 3px 3px 3px #cc0000;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+h1:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+
+h2{
+	font-family: 'Amatica SC', cursive;
+	color: #084078;
+	font-size: 70px;
+	text-shadow: 2px 2px 2px #b3b3d7;
+}
+
+#static-one{
+	font-family: 'Fascinate', cursive;
+	color: #FF9900;
+	font-size: 50px;
+	text-shadow: 2px 2px 2px #336688;
+
+
+}
+
+#emphatic-one{
+	font-family: 'Knewave', cursive;
+	color: #5000a1;
+	font-size: 70px;
+	text-shadow: 3px 3px 2px #ae0303;
+
+	
+}
+
+.animate-it{
+	animation: fadeAndScale 2.5s ease-in;
+	
+}
+
+@keyframes fadeAndScale {
+	from {
+		opacity: 0;
+		transform: scale3d(3.0, 3.0, 1);
+	}
+	to{
+ 		opacity: 1;
+ 		transform: scale3d(1, 1, 1);
+	}
+}
